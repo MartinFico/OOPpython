@@ -12,4 +12,11 @@ clovek1 = Person ("Pavel", "Novak" , 45 )
 clovek1.showMsg()
 
 class Student (Person):
-    spec = "devOps"
+    # spec = "devOps"
+    def __init__(self, name, surname, age, spec):
+        super().__init__(name, surname, age)
+        self.spec = spec
+
+
+student1 = Student ("Pavel", "Novak" , 45, "HW" )
+print (student1.spec)
