@@ -10,3 +10,6 @@ class Person:
 
 clovek1 = Person ("Pavel", "Novak" , 45 )
 clovek1.showMsg()
+
+class Student (Person):
+    spec = "devOps"
